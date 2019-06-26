@@ -4,28 +4,32 @@
     "txt": "Work.",
     "completed": true,
     "importance": "2",
-    "category": "Work"
+    "category": "Work",
+    "color": "#f6b73c"
   },
   {
     "id": "x102",
     "txt": "Enjoy :)",
     "completed": false,
     "importance": "2",
-    "category": "Life Style"
+    "category": "Life Style",
+    "color": "#e66465"
   },
   {
     "id": "x103",
     "txt": "Hug da Kids X",
     "completed": false,
     "importance": "1",
-    "category": "Family"
+    "category": "Family",
+    "color": "#e66465"
   },
   {
     "id": "x104",
     "txt": "Kiss da Wife :P",
     "completed": true,
     "importance": "1",
-    "category": "family"
+    "category": "family",
+    "color": "#f6b73c"
   }
 ]
 
