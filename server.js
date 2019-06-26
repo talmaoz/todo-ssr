@@ -77,12 +77,14 @@ app.get('/', (req, res) => {
 
     let homeBgColor = req.cookies.homeBgColor || "#aaaaaa";
     res.render(`${VIEW_DIR}/index.ejs`, {homeBgColor});
+    res.cookie('homeBgColor', homeBgColor)
 })
 
-app.post('/change-bg-color', (req, res) => {
+app.post('/', (req, res) => {
     const homePageData = req.body;
-    console.log('hello here Tal')
-    console.log(homePageData["home-bg-color"])
+    let newHomePageColor = homePageData["home-bg-color"]
+    console.log(newHomePageColor)
+    res.cookie('homeBgColor', newHomePageColor)
     res.redirect('/')
 })
 
