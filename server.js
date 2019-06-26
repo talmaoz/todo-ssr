@@ -1,22 +1,16 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser');
-
-
 const todoService = require('./services/todo.service');
 
 const app = express()
-
 app.use(express.static('public'))
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true })); 
 
 
 const port = 3000
-
 const VIEW_DIR = `${__dirname}/views`;
-
-// CRUDL - Create, Read (single), Update, Delete, List
 
 // Render list of todos
 app.get('/todo', (req, res) => {
@@ -25,7 +19,8 @@ app.get('/todo', (req, res) => {
             res.render(`${VIEW_DIR}/todo-list.ejs`, { todos });
         })
 })
-// Edit Todo
+
+// Edit Xtodo
 app.get('/todo/edit/:todoId?', (req, res) => {
     const todoId = req.params.todoId;
     if (todoId) {
@@ -51,10 +46,9 @@ app.post('/todo/save', (req, res) => {
         todoService.add(todoData)
             .then(addedTodo => res.redirect(`/todo/${addedTodo.id}`))
     }
+})
 
-});
-
-// Render Single todo
+// Render Single Xtodo
 app.get('/todo/:todoId', (req, res) => {
     const todoId = req.params.todoId;
     todoService.getById(todoId)
@@ -65,7 +59,8 @@ app.get('/todo/:todoId', (req, res) => {
             res.send(err);
         })
 })
-// Delete a Todo
+
+// Delete a XTodo
 app.get('/todo/delete/:todoId', (req, res) => {
 
     const todoId = req.params.todoId
@@ -75,17 +70,13 @@ app.get('/todo/delete/:todoId', (req, res) => {
         })
 })
 
-
-
-
 app.get('/', (req, res) => {
-
     var visitCount = req.cookies.visitCount || 0;
     visitCount++;
     res.cookie('visitCount', visitCount)
     res.sendFile(`${VIEW_DIR}/index.html`);
-
 })
+
 app.get('/admin', (req, res) => {
     const data = {
         greet: 'Yes Baba',
@@ -93,16 +84,12 @@ app.get('/admin', (req, res) => {
     }
     res.render(`${VIEW_DIR}/admin.ejs`, data);
 })
+
 app.get('/puki', (req, res) => {
-
     if (req.cookies.visitCount < 5) res.redirect('/')
-
     res.send('Hello Puki!')
 })
+
 app.get('/nono', (req, res) => res.redirect('/puki'))
-
-
-
-
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
