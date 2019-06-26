@@ -17,9 +17,33 @@
         <input name="id" type="hidden" value="<%=todo.id %>" />
         <input name="txt" type="text" value="<%= todo.txt%>"  />
         <label>
-            Done:
+            ||  Done:
             <input name="completed" value="true" type="checkbox"
             <%= (todo.completed)? 'checked' : '' %>   />
+        </label>
+        <label>
+            || Importance:
+            <input
+                list="importance" id="importance-chosen" name="importance-chosen"
+                value="<%=todo.importance%>"
+            />
+            <datalist id="importance">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+            </datalist>
+        </label>
+        <label>
+            || Category:
+            <input
+                list="category" id="category-chosen" name="category-chosen"
+                value="<%=todo.category%>"
+            />
+            <datalist id="importance">
+                <option value="Work">
+                <option value="Life Style">
+                <option value="Family">
+            </datalist>
         </label>
         <button type="submit">Save</button>
     </form>

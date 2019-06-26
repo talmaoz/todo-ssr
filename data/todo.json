@@ -2,22 +2,30 @@
   {
     "id": "x101",
     "txt": "Work.",
-    "completed": true
+    "completed": true,
+    "importance": "2",
+    "category": "Work"
   },
   {
     "id": "x102",
     "txt": "Enjoy :)",
-    "completed": false
+    "completed": false,
+    "importance": "2",
+    "category": "Life Style"
   },
   {
     "id": "x103",
     "txt": "Hug da Kids X",
-    "completed": false
+    "completed": false,
+    "importance": "1",
+    "category": "Family"
   },
   {
     "id": "x104",
     "txt": "Kiss da Wife :P",
-    "completed": true
+    "completed": true,
+    "importance": "1",
+    "category": "family"
   }
 ]
 
