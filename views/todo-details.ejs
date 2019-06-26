@@ -8,14 +8,16 @@
     <title>Todos</title>
 </head>
 
-<body>
+<body bgcolor="<%=todo.color%>">
     <nav>
         <a href="/todo">Todo List</a>
     </nav>
 
     <h1>Todo Details</h1>
-    <h2><%=todo.txt %></h2>
-    <h3><%=todo.completed %></h3>
+    <h2>Content:    <%=todo.txt        %></h2>
+    <h3>Importance: <%=todo.importance %></h3>
+    <h3>Completed:  <%=todo.completed  %></h3>
+    <h3>Category:   <%=todo.category   %></h3>
 </body>
 
 </html>

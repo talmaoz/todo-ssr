@@ -24,7 +24,7 @@
         <label>
             || Importance:
             <input
-                list="importance" id="importance-chosen" name="importance-chosen"
+                list="importance" id="importance-chosen" name="importance"
                 value="<%=todo.importance%>"
             />
             <datalist id="importance">
@@ -36,10 +36,10 @@
         <label>
             || Category:
             <input
-                list="category" id="category-chosen" name="category-chosen"
+                list="category" id="category-chosen" name="category"
                 value="<%=todo.category%>"
             />
-            <datalist id="importance">
+            <datalist id="category">
                 <option value="Work">
                 <option value="Life Style">
                 <option value="Family">
@@ -47,7 +47,7 @@
         </label>
         <label>
             || Color:
-            <input type="color" id="head" name="head"
+            <input type="color" id="color-choise" name="color"
                 value="<%= (todo.color)? todo.color : "#a76465" %>"
             />
         </label>
