@@ -71,10 +71,19 @@ app.get('/todo/delete/:todoId', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    var visitCount = req.cookies.visitCount || 0;
+    let visitCount = req.cookies.visitCount || 0;
     visitCount++;
     res.cookie('visitCount', visitCount)
-    res.sendFile(`${VIEW_DIR}/index.html`);
+
+    let homeBgColor = req.cookies.homeBgColor || "#aaaaaa";
+    res.render(`${VIEW_DIR}/index.ejs`, {homeBgColor});
+})
+
+app.post('/change-bg-color', (req, res) => {
+    const homePageData = req.body;
+    console.log('hello here Tal')
+    console.log(homePageData["home-bg-color"])
+    res.redirect('/')
 })
 
 app.get('/admin', (req, res) => {
