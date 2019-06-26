@@ -48,7 +48,7 @@ app.post('/todo/save', (req, res) => {
     }
 })
 
-// Render Single Xtodo
+// Render Single Xtodo details:
 app.get('/todo/:todoId', (req, res) => {
     const todoId = req.params.todoId;
     todoService.getById(todoId)
