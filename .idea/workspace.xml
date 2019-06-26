@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6211f21c-8e36-48ef-88e1-e61f5488c1f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/todo-edit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/todo-edit.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/todo-details.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/todo-details.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,12 +20,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="416">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
               <folding>
+                <element signature="e#677#956#0" />
+                <element signature="e#996#1447#0" />
                 <element signature="e#1512#1748#0" />
                 <element signature="e#1813#1952#0" />
-                <element signature="e#1985#2143#0" />
                 <element signature="e#2177#2361#0" />
                 <element signature="e#2394#2481#0" />
               </folding>
@@ -32,29 +34,29 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/todo-edit.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="52" column="16" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="52" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/todo.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/todo-edit.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/todo.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="1519">
+              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -66,6 +68,8 @@
       <find>todo-ssr</find>
       <find>http</find>
       <find>add</find>
+      <find>chosen</find>
+      <find>visitCount</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -75,9 +79,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/simple-server.js" />
-        <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/data/todo.json" />
         <option value="$PROJECT_DIR$/views/todo-edit.ejs" />
+        <option value="$PROJECT_DIR$/data/todo.json" />
+        <option value="$PROJECT_DIR$/views/todo-details.ejs" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/views/index.html" />
       </list>
     </option>
   </component>
@@ -164,7 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1561550464376</updated>
       <workItem from="1561550469724" duration="532000" />
-      <workItem from="1561551033226" duration="5320000" />
+      <workItem from="1561551033226" duration="6986000" />
     </task>
     <task id="LOCAL-00001" summary="Cosmetics">
       <created>1561552742153</created>
@@ -194,11 +200,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561555936711</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="category importance and color now support adding a new todo, I think.">
+      <created>1561556390686</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1561556390686</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Get Familiar of Ex. is done :)">
+      <created>1561557367394</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561557367394</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5852000" />
+    <option name="totallyTimeSpent" value="7518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -231,7 +251,10 @@
     <MESSAGE value="WIP 1" />
     <MESSAGE value="Added importance and category fields to .json and to todo-edit.ejs" />
     <MESSAGE value="Added color picker field to .json and to todo-edit.ejs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added color picker field to .json and to todo-edit.ejs" />
+    <MESSAGE value="category importance and color now support adding a new todo" />
+    <MESSAGE value="category importance and color now support adding a new todo, I think." />
+    <MESSAGE value="Get Familiar of Ex. is done :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get Familiar of Ex. is done :)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
@@ -279,29 +302,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/todo.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="1519">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        <state relative-caret-position="416">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
           <folding>
+            <element signature="e#677#956#0" />
+            <element signature="e#996#1447#0" />
             <element signature="e#1512#1748#0" />
             <element signature="e#1813#1952#0" />
-            <element signature="e#1985#2143#0" />
             <element signature="e#2177#2361#0" />
             <element signature="e#2394#2481#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/todo-edit.ejs">
+    <entry file="file://$PROJECT_DIR$/views/todo-details.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
-          <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/todo-edit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="52" column="16" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="52" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
