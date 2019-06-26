@@ -48,7 +48,7 @@
         <label>
             || Color:
             <input type="color" id="head" name="head"
-                value="<%=todo.color%>"
+                value="<%= (todo.color)? todo.color : "#a76465" %>"
             />
         </label>
         <button type="submit">Save</button>
